@@ -1,69 +1,68 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta name="viewport" content="width=device-width,initial-sacle=1.0">
-    <title>Career Guidance Website</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Modern Login Page | AsmrProg</title>
 </head>
 
 <body>
-    <section class="header">
-        <nav>
-            <a href="index.html"></a>
-            <div class="nav-links" id="navLinks">
-                <i class="fa fa-times" aria-hidden="true"></i>
-                <ul>
-                    <li><a href=" ">HOME</a></li>
-                </ul>
-            </div>
-            <i class="fa fa-bars" aria-hidden="true"></i>
-        </nav>
-        <div class="text-box">
-            <p>Choose a job You Love and you will never have to work a day in your life</p>
-            <h1 style="color:black;">CHOOSE BEST CAREER</h1>
+
+    <div class="container" id="container">
+        <div class="form-container sign-up">
+            <form>
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email for registeration</span>
+                <input type="text" placeholder="Name">
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <button>Sign Up</button>
+            </form>
         </div>
-    </section>
-    <section class="course">
-        <hr><br>
-        <h1>COURSES</h1><br>
-        <hr style="margin-bottom: 20px;">
-        <h2>Get exposed to a wide range of career opportunities,which further allows you to find the best fit for</h2>
-        <h1 style="margin-top:0">' Yourself '</h1>
-        </p>
-        <div class="row">
-            <div class="course-col">
-                <a href="page2/Engineering/index.html">Class 10</a>
-                <p>Choosing right career path after Class 10 can be a challenging task with so mant career options
-                    available , it can be tough to decide what to purse<br>Let US help You!</p>
-            </div>
-            <div class="course-col">
-                <a href="class12/index.html">INTERMEDIATE</a>
-                <p>Choosing the right path after Intermediate is extremely important as <b> Today's Youth are
-                        Tomorrow's
-                        Future</b> , students who are confused about their stream selection<br>Let US help You!</p>
+        <div class="form-container sign-in">
+            <form>
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icon"><i class="fa-brands fa-google-plus-g"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-github"></i></a>
+                    <a href="#" class="icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                </div>
+                <span>or use your email password</span>
+                <input type="email" placeholder="Email">
+                <input type="password" placeholder="Password">
+                <a href="#">Forget Your Password?</a>
+                <button><a href="../index.html">Sign In</a></button>
+            </form>
+        </div>
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome Back!</h1>
+                    <p>Enter your personal details to use all of site features</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hello, Friend!</h1>
+                    <p>Register with your personal details to use all of site features</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
             </div>
         </div>
-    </section>
-    <script>
-
-        var navLinks = document.getElementById("navLinks");
-
-        function showMenu() {
-            navLinks.style.right = "0";
-        }
-
-        function hideMenu() {
-            navLinks.style.right = "-200px";
-        }
-    </script>
-    <div class="conclusion">
-        <h2>Hopefully the information gathered throughtout the website provided you with a greater and clearer outlook
-            on a Career Path</h2>
     </div>
-    <h1>THANK YOU!</h1>
+
+    <script src="script.js">
+
+    </script>
 </body>
 
 </html>
